@@ -1,0 +1,5 @@
+let str = "javascript";
+
+console.log("Original string:", str);
+console.log("Sorted string:", str.split("").sort().join(""));
+console.log("Reversed string:", str.split("").reverse().join(""));
