@@ -1,0 +1,12 @@
+
+
+let a = 10;
+let b = "10";
+let c = "10";
+let d = null;
+let e;
+
+console.log("a and b are equal : " + (a === b));
+console.log("b and c are equal : " + (b === c));
+console.log("The value of d is : " + d);
+console.log("The value of e is : " + e);
