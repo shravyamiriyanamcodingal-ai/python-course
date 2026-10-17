@@ -1,3 +1,7 @@
 
-num = int(input("Enter a number: "))
-print("Your number is:", num)
+try:
+    num = int(input("Enter a number: "))
+    print("Your number is:", num)
+
+except ValueError:
+    print("Invalid input! Please enter a number.")

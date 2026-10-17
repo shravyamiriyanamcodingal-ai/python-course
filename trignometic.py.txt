@@ -1,0 +1,28 @@
+
+import math
+
+angle = float(input("Enter the angle in degrees: "))
+
+# Convert degrees to radians
+radians = math.radians(angle)
+
+# Trigonometric operations
+print("Sin value:", math.sin(radians))
+print("Cos value:", math.cos(radians))
+print("Tan value:", math.tan(radians))
+
+# Reciprocal trigonometric ratios
+if math.sin(radians) != 0:
+    print("Cosec value:", 1 / math.sin(radians))
+else:
+    print("Cosec is undefined")
+
+if math.cos(radians) != 0:
+    print("Sec value:", 1 / math.cos(radians))
+else:
+    print("Sec is undefined")
+
+if math.tan(radians) != 0:
+    print("Cot value:", 1 / math.tan(radians))
+else:
+    print("Cot is undefined")

@@ -1,0 +1,19 @@
+
+try:
+    name = input("Enter your name: ")
+
+    if name == "":
+        raise ValueError("Name cannot be empty!")
+
+    print("Hello,", name)
+    print("Thank you for learning Python!")
+
+except ValueError as e:
+    print("Error:", e)
+
+except Exception as e:
+    print("Something went wrong:", e)
+
+finally:
+    print("Bye Bye! 👋")
+    print("See you again! 😊")

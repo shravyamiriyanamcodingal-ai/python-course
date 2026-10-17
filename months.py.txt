@@ -1,0 +1,11 @@
+
+import calendar
+
+month = int(input("Enter a month number (1-12): "))
+
+if 1 <= month <= 12:
+    month_name = calendar.month_name[month]
+    print("Month:", month_name)
+    print("Number of days:", calendar.monthrange(2026, month)[1])
+else:
+    print("Invalid month! Enter a number between 1 and 12.")

@@ -1,0 +1,28 @@
+
+try:
+    travel = float(input("Enter travel expenses: "))
+    hotel = float(input("Enter hotel expenses: "))
+    food = float(input("Enter food expenses: "))
+    shopping = float(input("Enter shopping expenses: "))
+    people = int(input("Enter number of people: "))
+
+    if travel < 0 or hotel < 0 or food < 0 or shopping < 0:
+        print("Expenses cannot be negative.")
+
+    elif people <= 0:
+        print("Number of people must be greater than zero.")
+
+    else:
+        total = travel + hotel + food + shopping
+        per_person = total / people
+
+        print("\n----- TRIP EXPENDITURE -----")
+        print("Travel expenses:", travel)
+        print("Hotel expenses:", hotel)
+        print("Food expenses:", food)
+        print("Shopping expenses:", shopping)
+        print("Total expenditure:", total)
+        print("Cost per person:", round(per_person, 2))
+
+except ValueError:
+    print("Invalid input! Please enter valid numbers.")
