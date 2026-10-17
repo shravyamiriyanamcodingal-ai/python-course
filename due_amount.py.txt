@@ -1,0 +1,12 @@
+
+total_amount = float(input("Enter the total amount: "))
+paid_amount = float(input("Enter the amount already paid: "))
+
+due_amount = total_amount - paid_amount
+
+if due_amount > 0:
+    print("Due amount is:", due_amount)
+elif due_amount == 0:
+    print("No due amount. Payment completed!")
+else:
+    print("Extra amount paid:", abs(due_amount))

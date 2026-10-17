@@ -1,0 +1,10 @@
+
+import os
+
+choice = input("Do you want to shut down your computer? (yes/no): ")
+
+if choice.lower() == "yes":
+    os.system("shutdown /s /t 60")
+    print("Computer will shut down in 60 seconds.")
+else:
+    print("Shutdown cancelled.")
