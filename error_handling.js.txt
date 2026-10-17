@@ -1,0 +1,15 @@
+
+console.log("JavaScript Error Handling");
+
+try {
+    let num = 10;
+    let result = num.toUpperCase();
+
+    console.log(result);
+
+} catch (error) {
+    console.log("Error caught:", error.message);
+
+} finally {
+    console.log("Program completed");
+}

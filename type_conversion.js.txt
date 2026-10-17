@@ -1,0 +1,16 @@
+
+console.log("String to Number:", Number("100"));
+
+console.log("Number to String:", String(100));
+
+console.log("Parse Integer:", parseInt("25.8"));
+
+console.log("Parse Float:", parseFloat("25.8"));
+
+console.log("Number to Boolean:", Boolean(1));
+
+console.log("Zero to Boolean:", Boolean(0));
+
+console.log("Automatic Conversion:", "10" + 5);
+
+console.log("Automatic Subtraction:", "10" - 5);

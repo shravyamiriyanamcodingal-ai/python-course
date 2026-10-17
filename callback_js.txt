@@ -1,0 +1,19 @@
+
+function add(a, b, callback) {
+    let result = a + b;
+    callback(result);
+}
+
+function display(result) {
+    console.log("Result:", result);
+}
+
+add(10, 20, display);
+
+add(5, 15, function(result) {
+    console.log("Second result:", result);
+});
+
+add(2, 3, (result) => {
+    console.log("Third result:", result);
+});

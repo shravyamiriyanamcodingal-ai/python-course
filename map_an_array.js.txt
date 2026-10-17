@@ -1,0 +1,12 @@
+let arr = [30, 10, 50, 20, 40];
+
+console.log("Original array:", arr);
+
+let ascending = [...arr].sort((a, b) => a - b);
+console.log("Ascending order:", ascending);
+
+let descending = [...arr].sort((a, b) => b - a);
+console.log("Descending order:", descending);
+
+let reversed = [...arr].reverse();
+console.log("Reversed array:", reversed);

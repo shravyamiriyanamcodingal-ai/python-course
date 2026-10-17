@@ -1,0 +1,27 @@
+
+console.log("JavaScript Promises");
+
+let myPromise = new Promise((resolve, reject) => {
+    let number = 10;
+
+    if (number > 0) {
+        resolve(number);
+    } else {
+        reject("Number must be positive");
+    }
+});
+
+myPromise
+    .then((result) => {
+        console.log("Original value:", result);
+        return result * 2;
+    })
+    .then((result) => {
+        console.log("Doubled value:", result);
+    })
+    .catch((error) => {
+        console.log("Error:", error);
+    })
+    .finally(() => {
+        console.log("Promise completed");
+    });

@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Validation API</title>
+</head>
+<body>
+
+    <h2>Email Validation</h2>
+
+    <form id="emailForm">
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+        >
+        <button type="submit">Validate</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        document.getElementById("emailForm").addEventListener(
+            "submit",
+            async function(event) {
+                event.preventDefault();
+
+                let email = document.getElementById("email").value;
+                let result = document.getElementById("result");
+
+                result.textContent = "Checking email...";
+
+                try {
+                    let response = await fetch(
+                        "https://api.eva.pingutil.com/email?email=" +
+                        encodeURIComponent(email)
+                    );
+
+                    if (!response.ok) {
+                        throw new Error("API request failed");
+                    }
+
+                    let data = await response.json();
+
+                    if (data.data && data.data.valid_syntax) {
+                        result.textContent = "Email format is valid!";
+                    } else {
+                        result.textContent = "Email format is invalid!";
+                    }
+                } catch (error) {
+                    result.textContent =
+                        "Unable to validate. Please try again.";
+                    console.error(error);
+                }
+            }
+        );
+    </script>
+
+</body>
+</html>

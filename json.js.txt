@@ -1,0 +1,18 @@
+
+console.log("JSON in JavaScript");
+
+let student = {
+    name: "Shravya",
+    age: 22,
+    branch: "CSE"
+};
+
+// Convert object to JSON string
+let jsonData = JSON.stringify(student);
+console.log("JSON String:", jsonData);
+
+// Convert JSON string back to object
+let obj = JSON.parse(jsonData);
+console.log("Student Name:", obj.name);
+console.log("Student Age:", obj.age);
+console.log("Data Type:", typeof obj);

@@ -1,0 +1,19 @@
+
+let str = "Hello JavaScript";
+
+console.log("Original:", str);
+
+console.log("Search:", str.search("JavaScript"));
+
+console.log("Replace:", str.replace("JavaScript", "World"));
+
+console.log("Case-insensitive replace:",
+    str.replace(/javascript/i, "World"));
+
+let fruits = "apple banana apple";
+console.log("Replace all:",
+    fruits.replaceAll("apple", "orange"));
+
+let numbers = "Room 123";
+console.log("Replace digits:",
+    numbers.replace(/[0-9]/g, "*"));
