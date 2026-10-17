@@ -1,0 +1,15 @@
+
+weather = input("Enter weather condition: ").lower()
+
+if weather == "sunny":
+    print("It is a sunny day! Wear sunglasses.")
+elif weather == "rainy":
+    print("It is raining! Take an umbrella.")
+elif weather == "cloudy":
+    print("The sky is cloudy.")
+elif weather == "windy":
+    print("It is windy outside!")
+elif weather == "snowy":
+    print("It is snowing! Stay warm.")
+else:
+    print("Weather condition not recognized.")

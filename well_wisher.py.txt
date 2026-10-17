@@ -1,0 +1,7 @@
+
+name = input("Enter your name: ")
+
+print("\nHello", name)
+print("I am your well wisher!")
+print("May you always be happy and successful.")
+print("Keep smiling and never give up! 😊")
