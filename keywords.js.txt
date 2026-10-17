@@ -1,0 +1,16 @@
+
+console.log("JavaScript let and const");
+
+// Using let
+let a = 10;
+console.log("Value of a is:", a);
+
+a = 20; // We can change the value of let
+console.log("Updated value of a is:", a);
+
+// Using const
+const b = 30;
+console.log("Value of b is:", b);
+
+// Uncommenting the next line causes an error
+// b = 40;
